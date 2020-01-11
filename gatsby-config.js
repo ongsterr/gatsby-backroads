@@ -11,5 +11,5 @@ module.exports = {
     description: 'Description',
     author: 'Author',
   },
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [`gatsby-plugin-sass`, `gatsby-plugin-styled-components`],
 }
