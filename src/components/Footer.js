@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import { FaRProject } from 'react-icons/fa'
+// import { Link } from 'gatsby'
+// import { FaRProject } from 'react-icons/fa'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import links from '../utils/links'
 import socialIcons from '../utils/social-icons'
@@ -13,9 +14,9 @@ const Footer = () => {
       <div className={styles.links}>
         {links.map((item, i) => {
           return (
-            <Link key={i} to={item.path}>
+            <AniLink fade key={i} to={item.path}>
               {item.text}
-            </Link>
+            </AniLink>
           )
         })}
       </div>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import { FaAlignRight } from 'react-icons/fa'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import links from '../utils/links'
 import socialIcons from '../utils/social-icons'
@@ -34,7 +35,9 @@ const Navbar = () => {
           {links.map((item, i) => {
             return (
               <li key={i} className="">
-                <Link to={item.path}>{item.text}</Link>
+                <AniLink fade to={item.path}>
+                  {item.text}
+                </AniLink>
               </li>
             )
           })}
