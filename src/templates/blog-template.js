@@ -52,8 +52,8 @@ const BlogTemplate = ({ data }) => {
       <section className={styles.blog}>
         <div className={styles.center}>
           <h1>{title}</h1>
-          <h4>publsihed at: {publishedDate}</h4>
-          <article className={StyleSheetList.post}>
+          <h4>published at: {publishedDate}</h4>
+          <article className={styles.post}>
             {documentToReactComponents(json, options)}
           </article>
         </div>
