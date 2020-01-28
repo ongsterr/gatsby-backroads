@@ -9,12 +9,14 @@ import Banner from '../components/Banner'
 import About from '../components/Home/About'
 import Services from '../components/Home/Services'
 import FeaturedTours from '../components/Home/FeaturedTours'
+import SEO from '../components/SEO'
 
 export default ({ data }) => {
   const { defaultBcg } = data
 
   return (
     <Layout>
+      <SEO title="Home" />
       <StyledHero img={defaultBcg.childImageSharp.fluid} home={true}>
         <Banner
           title="Continue Exploring"

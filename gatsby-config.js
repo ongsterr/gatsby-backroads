@@ -17,6 +17,9 @@ module.exports = {
     description:
       'Explore awesome worldwide tours & discover what makes each of them unique. Forget you daily routine and say yes to adventure.',
     author: 'John Doe',
+    twitterUsername: '@john_doe',
+    image: '/defaultBcg.jpeg',
+    siteUrl: 'https://gatsby-backroad.netlify.com',
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -47,5 +50,6 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 }
