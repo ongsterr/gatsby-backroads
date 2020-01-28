@@ -4,12 +4,14 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import StyledHero from '../components/StyledHero'
 import Tours from '../components/Tours/Tours'
+import SEO from '../components/SEO'
 
 const tours = ({ data }) => {
   const { defaultBcg } = data
 
   return (
     <Layout>
+      <SEO title="Tours" />
       <StyledHero img={defaultBcg.childImageSharp.fluid} />
       <Tours />
     </Layout>
