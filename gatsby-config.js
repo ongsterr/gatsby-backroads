@@ -22,6 +22,15 @@ module.exports = {
     siteUrl: 'https://gatsby-backroad.netlify.com',
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://gatsby-backroad.netlify.com',
+        sitemap: 'https://gatsby-backroad.netlify.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-playground`,
